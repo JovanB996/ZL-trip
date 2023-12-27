@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #006faf;
+    /* background: url('bcg-zlatibor.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.header-text {
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

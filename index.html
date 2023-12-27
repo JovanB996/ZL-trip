@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZLatibor trip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Poppins:wght@400;600&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header-text">Do you wanna go to Zlatibor?</h1>
+        </div>
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/eHWUyxudOQGCulzFFR/giphy.gif" alt="Cute animated illustration">
+        </div>
+        <div class="btns">
+            <button class="btn" id="yesBtn" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noBtn" onmouseover="moveBtn()" onclick="moveBtn()">No</button>
+        </div>
+    </div>
+    <script>
+        function nextPage() {
+            window.location.href = "trip-yes.html";
+        }
+        
+        function moveBtn() {
+            var x = Math.random() * (window.innerWidth - document.getElementById('noBtn').offsetWidth) - 85;
+            var y = Math.random() * (window.innerHeight - document.getElementById('noBtn').offsetHeight) - 48;
+            document.getElementById('noBtn').style.left = `${x}px`;
+            document.getElementById('noBtn').style.top = `${y}px`;
+        }
+    </script>
+</body> 
+</html>
