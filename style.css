@@ -93,6 +93,7 @@ body {
 
     img {
         height: 60vh;
+        width: 100%;
     }
 
     .btn {
